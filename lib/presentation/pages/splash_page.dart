@@ -1,6 +1,6 @@
 import 'dart:async';
 import 'package:flutter/material.dart';
-import 'package:salt_technical_test/presentation/pages/home_page.dart';
+import 'package:salt_technical_test/presentation/pages/login_page.dart';
 import '../../config/theme.dart';
 import '../../config/value.dart';
 
@@ -18,7 +18,7 @@ class _SplashPageState extends State<SplashPage> {
     Timer(
         const Duration(seconds: 3),
         () => Navigator.pushNamedAndRemoveUntil(
-            context, HomePage.routeName, (route) => false));
+            context, LoginPage.routeName, (route) => false));
     super.initState();
   }
 
